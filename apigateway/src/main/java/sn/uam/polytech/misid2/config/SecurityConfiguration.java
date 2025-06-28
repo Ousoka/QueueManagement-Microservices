@@ -110,7 +110,7 @@ public class SecurityConfiguration {
             )
             .authorizeExchange(authz ->
                 // prettier-ignore
-                authz
+                authz 
                     .pathMatchers("/api/authenticate").permitAll()
                     .pathMatchers("/api/auth-info").permitAll()
                     .pathMatchers("/api/admin/**").hasAuthority(AuthoritiesConstants.ADMIN)
